@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMark</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+   <section class="padding-top">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+         <h1 id="bookmaker" class="custom-hover text-center Pacifico-Regular font-size-50"></h1>
+       <div class="content padding-top ">
+        <h2 class="PTSansCaption-Regular text-center color-gredint font-size-25"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+       
+    <div class="div">
+      <label class="font-size-16 PTSansCaption-Bold" for="sitename"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+        <input type="text" id="sitename" name="sitename" placeholder="Bookmark Name">
+        <label class="font-size-16 PTSansCaption-Bold" for="siteurl"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+        <input type="text" id="siteurl" name="siteurl" placeholder="Website URL">
+        <button  onclick="addWebsite();" class="submit-btn btn color-red">Submit</button>
+       
+    </div>
+      
+       </div>
+       <table class="mt-4">
+        <thead class="text-center ">
+          <tr class="bg-white">
+            <th class=" p-2">index</th>
+            <th class=" p-2">Website Name</th>
+            <th class=" p-2">visit</th>
+            <th class=" p-2">delete</th>
+          </tr>
+        </thead>
+        <tbody id="rowData">
+        </tbody>
+       </table>
+      
+      
+      
+      
+        </div>
+      
+    </div>
+   </section>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
